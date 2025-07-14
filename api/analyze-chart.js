@@ -28,7 +28,7 @@ export default async function handler(request, response) {
 
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   // Menggunakan model 'gemini-1.5-flash-latest' atau 'gemini-1.5-pro-latest' untuk kemampuan Vision
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" }); 
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" }); 
 
   try {
     // Parsing multipart/form-data
